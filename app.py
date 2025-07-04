@@ -1,4 +1,5 @@
 import streamlit as st
+import time
 from PIL import Image
 import random
 
@@ -37,7 +38,7 @@ def main():
                 lat = round(39.9200 + random.uniform(-0.001, 0.001), 6)
                 lon = round(32.8540 + random.uniform(-0.001, 0.001), 6)
                 coordinates.text(f"Koordinatlar: {lat}° N, {lon}° E")
-                st.sleep(0.5)
+                time.sleep(0.5)
 
         else:
             st.error("Hatalı Giriş")
